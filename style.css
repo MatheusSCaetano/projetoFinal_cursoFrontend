@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.center{
+    display: flex;
+    max-width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Deixar a flex livre para quebrar para baixo quando passar do 100%*/
+
+}
+section.main{
+    background-image: url('imagens/background.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding:20px 0 80px 0 ;
+}
+.logo_menu{width: 50%;}
+.itens_menu{
+    width: 50%;
+    
+}
+.menu{
+    width: 100%;
+    display: flex; /*Alinhar*/
+}
+.itens_menu a{
+    font-weight: bold; /*Intensidade da fonte -> tipo um negrito*/
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.itens_menu a:hover{
+    border-bottom:2px solid #FFDD33; /* Inserindo uma borda inferior ao passar o mouse encima*/
+}
+
+.itens_menu .contact-btn{
+    background-color: #0F3FD3;
+    padding:10px 10px;
+    border-radius: 3px;
+}
+.itens_menu a.contact-btn:hover{
+    border: 0; /* O item 'Entre em contato não terá o efeito hover'*/
+}
+.mockup{
+    display: block; /* Para quebrar a linha */
+    width: 100%; 
+    color: white;  
+    text-align: center;
+    padding-top: 100px;
+}
+.mockup h1{
+    font-size: 40px;
+}
