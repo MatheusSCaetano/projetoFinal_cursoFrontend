@@ -1,59 +1,167 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-.center{
+
+.center {
     display: flex;
     max-width: 100%;
     padding: 0 2%;
     margin: 0 auto;
-    flex-wrap: wrap; /* Deixar a flex livre para quebrar para baixo quando passar do 100%*/
+    flex-wrap: wrap;
+    /* Deixar a flex livre para quebrar para baixo quando passar do 100%*/
 
 }
-section.main{
+
+section.main {
     background-image: url('imagens/background.png');
     background-position: center;
     background-size: cover;
     min-height: 700px;
-    padding:20px 0 80px 0 ;
+    padding: 20px 0 80px 0;
 }
-.logo_menu{width: 50%;}
-.itens_menu{
+
+.logo_menu {
     width: 50%;
-    
 }
-.menu{
+
+.itens_menu {
+    width: 50%;
+
+}
+
+.menu {
     width: 100%;
-    display: flex; /*Alinhar*/
+    display: flex;
+    /*Alinhar*/
 }
-.itens_menu a{
-    font-weight: bold; /*Intensidade da fonte -> tipo um negrito*/
+
+.itens_menu a {
+    font-weight: bold;
+    /*Intensidade da fonte -> tipo um negrito*/
     color: white;
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
 }
-.itens_menu a:hover{
-    border-bottom:2px solid #FFDD33; /* Inserindo uma borda inferior ao passar o mouse encima*/
+
+.itens_menu a:hover {
+    border-bottom: 2px solid #FFDD33;
+    /* Inserindo uma borda inferior ao passar o mouse encima*/
 }
 
-.itens_menu .contact-btn{
+.itens_menu .contact-btn {
     background-color: #0F3FD3;
-    padding:10px 10px;
+    padding: 10px 10px;
     border-radius: 3px;
 }
-.itens_menu a.contact-btn:hover{
-    border: 0; /* O item 'Entre em contato não terá o efeito hover'*/
+
+.itens_menu a.contact-btn:hover {
+    border: 0;
+    /* O item 'Entre em contato não terá o efeito hover'*/
 }
-.mockup{
-    display: block; /* Para quebrar a linha */
-    width: 100%; 
-    color: white;  
+
+.mockup {
+    display: block;
+    /* Para quebrar a linha */
+    width: 100%;
+    color: white;
     text-align: center;
     padding-top: 100px;
 }
-.mockup h1{
+
+.mockup h1 {
     font-size: 40px;
+}
+
+.mockup img {
+    max-width: 100%;
+    /* Design responsivo da imagem do mockup*/
+}
+
+.marcas {
+    padding: 100px 0;
+}
+
+.marcas img {
+    width: 20%;
+}
+
+section.porqueNos {
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+
+section.porqueNos>.center {
+    max-width: 1280px;
+}
+
+section.porqueNos>.center>h1 {
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+section.porqueNos>.center>p {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #7E92AC;
+}
+
+.diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.box-diferenciais {
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.box-diferenciais h3 {
+    font-size: 28px;
+    color: black;
+    margin: 20px 0;
+
+}
+
+.box-diferenciais p {
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .box-diferenciais {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.marcas img {
+        max-width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo_menu {
+        text-align: center;
+        width: 100%;
+    }
+
+    .itens_menu {
+        width: 100%;
+        text-align: center;
+    }
 }
